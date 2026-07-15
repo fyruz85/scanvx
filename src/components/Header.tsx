@@ -44,7 +44,7 @@ export function Header() {
             aria-label="ScanVX Solution home"
           >
             <img
-              src="/images/logo.webp"
+              src="/images/logo.svg"
               alt="ScanVX Solution"
               className="h-10 w-auto lg:h-12"
               style={{
