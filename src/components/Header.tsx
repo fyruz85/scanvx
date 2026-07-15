@@ -31,8 +31,8 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-ink-950/85 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-ink-950/20'
-          : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-xl border-b border-ink-100 shadow-lg shadow-ink-900/5'
+          : 'bg-white'
       }`}
     >
       <div className="container-mx container-px">
@@ -47,10 +47,6 @@ export function Header() {
               src="/images/logo.svg"
               alt="ScanVX Solution"
               className="h-10 w-auto lg:h-12"
-              style={{
-                filter:
-                  'brightness(1.8) contrast(0.9) drop-shadow(0 0 8px rgba(59,180,255,0.4))',
-              }}
             />
           </button>
 
@@ -62,13 +58,13 @@ export function Header() {
                 onClick={() => scrollTo(link.id)}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 ${
                   activeId === link.id
-                    ? 'text-white'
-                    : 'text-ink-300 hover:text-white'
+                    ? 'text-brand-600'
+                    : 'text-ink-500 hover:text-ink-900'
                 }`}
               >
                 {link.label}
                 {activeId === link.id && (
-                  <span className="absolute bottom-0 left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full bg-brand-400" />
+                  <span className="absolute bottom-0 left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full bg-brand-600" />
                 )}
               </button>
             ))}
@@ -87,7 +83,7 @@ export function Header() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex h-10 w-10 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-ink-700 transition-colors hover:bg-ink-100 lg:hidden"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -96,15 +92,15 @@ export function Header() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <nav className="mb-4 flex flex-col gap-1 rounded-2xl bg-ink-900/95 p-3 backdrop-blur-xl lg:hidden">
+          <nav className="mb-4 flex flex-col gap-1 rounded-2xl bg-white/95 border border-ink-100 p-3 backdrop-blur-xl lg:hidden">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
                 className={`rounded-lg px-4 py-3 text-left text-sm font-medium transition-colors ${
                   activeId === link.id
-                    ? 'bg-brand-600/20 text-brand-300'
-                    : 'text-ink-300 hover:bg-white/5 hover:text-white'
+                    ? 'bg-brand-50 text-brand-600'
+                    : 'text-ink-600 hover:bg-ink-50 hover:text-ink-900'
                 }`}
               >
                 {link.label}
