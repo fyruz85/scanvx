@@ -39,12 +39,12 @@ const sectors: Sector[] = [
     projects: [
       { title: 'Zabbix Configuration', client: 'Datakraf Sdn Bhd', icon: Activity },
       { title: 'Zabbix Redeployment', client: 'Hibiscus Petroleum Bhd', icon: Activity },
-      { title: 'Proxmox Server Installation', client: 'Perda Ventures Icc Sdn Bhd', icon: Server },
-      { title: 'Network Maintenance', client: 'Perda Ventures Icc Sdn Bhd', icon: Network },
+      { title: 'Proxmox Server Installation', client: 'Perda Ventures Inc Sdn Bhd', icon: Server },
+      { title: 'Network Maintenance', client: 'Perda Ventures Inc Sdn Bhd', icon: Network },
       { title: 'Disaster Recovery', client: 'Aizo Digital Works Sdn Bhd', icon: ShieldCheck },
       { title: 'Disaster Recovery', client: 'Aizo Group Bhd', icon: ShieldCheck },
-      { title: 'Web Development', client: 'Stellar Engineering Sdn Bhd', icon: Globe },
-      { title: 'Web Development', client: 'RidhoTravel', icon: Globe },
+      { title: 'Web Design', client: 'Stellar Engineering Sdn Bhd', icon: Globe },
+      { title: 'Web Design & Booking System', client: 'RidhoTravel', icon: Globe },
     ],
   },
   {
