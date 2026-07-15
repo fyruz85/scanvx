@@ -6,7 +6,7 @@ import {
   ShieldCheck,
   Globe,
   Container,
-  MailCheck,
+  Cloud,
   type LucideIcon,
 } from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
@@ -23,49 +23,49 @@ const services: Service[] = [
     icon: Network,
     title: 'MultiWAN & Custom Firewall',
     description:
-      'Combine multiple ISP lines with custom pfSense/OPNsense firewall rules for redundant, high-speed internet bonding. One line drops — nothing changes.',
-  },
-  {
-    icon: Monitor,
-    title: 'Digital Signage',
-    description:
-      'Real-time information displays for corporate lobbies, schools, and retail. Managed remotely, updated instantly.',
-  },
-  {
-    icon: Wifi,
-    title: 'Wireless Infrastructure',
-    description:
-      'Replace messy cable runs with enterprise-grade wireless coverage. Seamless roaming across your entire premises.',
-  },
-  {
-    icon: ServerCog,
-    title: 'Server & IP Migration',
-    description:
-      'Zero-downtime migration of your servers, IPs, and services. We handle DNS, firewall rules, and data integrity.',
-  },
-  {
-    icon: Globe,
-    title: 'Network Infrastructure',
-    description:
-      'VLAN segmentation, bandwidth shaping, QoS policies, and IPv6 network solutions to future-proof your infrastructure.',
+      'Combine multiple ISP lines with pfSense/OPNsense firewall rules for redundant, high-speed internet bonding.',
   },
   {
     icon: ShieldCheck,
     title: 'Security & IDS/IPS',
     description:
-      'Web application firewalls, intrusion detection and prevention, SSL enforcement, and regular vulnerability assessments — all layers covered.',
+      'Web application firewalls, intrusion detection and prevention, SSL enforcement, and vulnerability assessments.',
+  },
+  {
+    icon: Globe,
+    title: 'Network Infrastructure',
+    description:
+      'VLAN segmentation, bandwidth shaping, QoS policies, and IPv6 solutions to future-proof your network.',
+  },
+  {
+    icon: Wifi,
+    title: 'Wireless Infrastructure',
+    description:
+      'Enterprise-grade wireless coverage with seamless roaming. Replace messy cable runs across your entire premises.',
+  },
+  {
+    icon: ServerCog,
+    title: 'Server & IP Migration',
+    description:
+      'Zero-downtime migration of servers, IPs, and services. DNS, firewall rules, and data integrity — handled.',
   },
   {
     icon: Container,
     title: 'Virtualization & Disaster Recovery',
     description:
-      'Proxmox, VMware, and containerized infrastructure with tested disaster recovery plans. Your systems come back fast when it matters.',
+      'Proxmox, VMware, and containerized infrastructure with tested DR plans. Your systems come back fast.',
   },
   {
-    icon: MailCheck,
-    title: 'Web & Mail Server Solutions',
+    icon: Cloud,
+    title: 'Cloud & Hosting',
     description:
-      'Custom web hosting and mail server deployments you fully own and control. No third-party dependency, no per-seat pricing.',
+      'AWS, Proxmox cloud, and self-hosted infrastructure. Web hosting, cloud networking, and managed deployments.',
+  },
+  {
+    icon: Monitor,
+    title: 'Digital Signage & Web Design',
+    description:
+      'Xibo-powered digital signage for lobbies, schools, and retail — plus custom web design and development.',
   },
 ];
 
