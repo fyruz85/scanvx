@@ -3,6 +3,7 @@ import { MapPin } from 'lucide-react';
 const footerLinks = [
   { id: 'home', label: 'Home' },
   { id: 'services', label: 'Services' },
+  { id: 'projects', label: 'Portfolio' },
   { id: 'why', label: 'Why Us' },
   { id: 'contact', label: 'Contact' },
 ];
