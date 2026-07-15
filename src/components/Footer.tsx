@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const footerLinks = [
   { id: 'home', label: 'Home' },
-  { id: 'services', label: 'Our Services' },
-  { id: 'blog', label: 'Blog' },
+  { id: 'services', label: 'Services' },
+  { id: 'why', label: 'Why Us' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -31,7 +31,7 @@ export function Footer() {
               technology consulting for companies of all sizes.
             </p>
             <p className="mt-4 text-sm font-medium text-brand-400">
-              scanvx.com.my
+              scanvx.my
             </p>
           </div>
 
@@ -73,10 +73,10 @@ export function Footer() {
               <li className="flex items-center gap-3 text-sm text-ink-400">
                 <Mail className="h-4 w-4 shrink-0 text-brand-400" />
                 <a
-                  href="mailto:info@scanvx.com.my"
+                  href="mailto:info@scanvx.my"
                   className="transition-colors hover:text-brand-400"
                 >
-                  info@scanvx.com.my
+                  info@scanvx.my
                 </a>
               </li>
             </ul>
@@ -86,10 +86,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm text-ink-500">
-            &copy; 2018 ScanVX Solutions (AS0377850-V). All rights reserved.
+            &copy; {new Date().getFullYear()} ScanVX Solution (AS0377850-V). All rights reserved.
           </p>
           <p className="text-xs text-ink-600">
-            Designed &amp; built for scanvx.com.my
+            scanvx.my
           </p>
         </div>
       </div>
