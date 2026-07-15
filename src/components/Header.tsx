@@ -46,7 +46,7 @@ export function Header() {
             <img
               src="/images/logo.svg"
               alt="ScanVX Solution"
-              className="h-10 w-auto lg:h-12"
+              className="h-14 w-auto lg:h-16"
             />
           </button>
 
