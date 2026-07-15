@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, ChevronRight, Sparkles } from 'lucide-react';
 
 export function Hero() {
   const scrollTo = (id: string) =>
@@ -24,19 +24,20 @@ export function Hero() {
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-ink-200 backdrop-blur-sm animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-400" />
-            <span>Trusted IT Solutions Since 2018</span>
+            <span>IT Infrastructure · Networking · Security</span>
           </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl">
-            Extreme IT Solutions{' '}
-            <span className="gradient-text">You Can Trust</span>
+            Your network should{' '}
+            <span className="gradient-text">just work.</span>
           </h1>
 
           {/* Subtext */}
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-300 sm:text-xl">
-            We offer a unique approach to the delivery of IT professional
-            services for companies of all sizes.
+            We build, secure, and maintain IT infrastructure for businesses
+            and institutions across Northern Malaysia. No fluff — just
+            systems that stay up.
           </p>
 
           {/* CTAs */}
@@ -45,24 +46,24 @@ export function Hero() {
               onClick={() => scrollTo('contact')}
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-brand-600/30 transition-all duration-300 hover:shadow-brand-600/50 hover:brightness-110 active:scale-[0.98]"
             >
-              Get A Free Quote
+              Talk to Us
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </button>
             <button
               onClick={() => scrollTo('services')}
               className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
             >
-              <Play className="h-4 w-4 text-brand-400" />
-              Learn More
+              See What We Do
+              <ChevronRight className="h-4 w-4 text-brand-400" />
             </button>
           </div>
 
           {/* Stats */}
           <div className="mt-16 flex flex-wrap gap-8 sm:gap-12">
             {[
-              { value: '6+', label: 'Core Services' },
-              { value: '24/7', label: 'Support & Monitoring' },
-              { value: '100%', label: 'Client Focus' },
+              { value: '10+', label: 'Years Experience' },
+              { value: '6', label: 'Core Services' },
+              { value: '24/7', label: 'Monitoring' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="font-display text-3xl font-bold text-white sm:text-4xl">
