@@ -9,9 +9,11 @@ export function Hero() {
       id="home"
       className="relative flex min-h-screen items-center overflow-hidden bg-ink-950 pt-16 lg:pt-20"
     >
-      {/* Background layers */}
+      {/* Background: gradient first, then grid on top */}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-950/80 to-ink-900" />
       <div className="absolute inset-0 hero-grid" />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-950/95 to-ink-900" />
+
+      {/* Glow effects */}
       <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-brand-600/20 blur-[120px] animate-pulse-glow" />
       <div
         className="absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-accent-500/15 blur-[120px] animate-pulse-glow"
