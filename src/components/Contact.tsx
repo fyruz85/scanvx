@@ -2,8 +2,8 @@ import { MapPin, Clock, CheckCircle2, Copy, ExternalLink, MessageCircle, Mail } 
 import { useState } from 'react';
 import { Reveal } from './Reveal';
 
-const ADDRESS = 'A/9, Taman Sayang, Jalan Putra 06250 Alor Setar, Kedah';
-const MAPS_URL = 'https://maps.google.com/?q=A/9+Taman+Sayang+Jalan+Putra+Alor+Setar+Kedah';
+const ADDRESS = '14, Taman Sayang, 06250 Alor Setar, Kedah';
+const MAPS_URL = 'https://maps.google.com/?q=14+Taman+Sayang+06250+Alor+Setar+Kedah';
 const WHATSAPP_NUMBER = '60105448902';
 const WHATSAPP_MSG = encodeURIComponent(
   'Hi ScanVX! I would like to enquire about your IT services and get a free quote.'
