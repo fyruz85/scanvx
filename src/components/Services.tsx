@@ -4,6 +4,7 @@ import {
   Wifi,
   ServerCog,
   ShieldCheck,
+  Globe,
   type LucideIcon,
 } from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
@@ -18,39 +19,39 @@ interface Service {
 const services: Service[] = [
   {
     icon: Network,
-    title: 'Multiwan Solution',
+    title: 'MultiWAN Solutions',
     description:
-      'We understand the needs of high speed internet for your business and MultiWan will help you to combine your Internet speed with several ISP.',
+      'Combine multiple ISP lines into a single high-speed, redundant connection. No more downtime when one line drops.',
   },
   {
     icon: Monitor,
-    title: 'Digital Signage Solution',
+    title: 'Digital Signage',
     description:
-      'In corporate spaces, digital signage is used to communicate with employees, provide information and updates on corporate events and activities in real-time, and more.',
+      'Real-time information displays for corporate lobbies, schools, and retail. Managed remotely, updated instantly.',
   },
   {
     icon: Wifi,
-    title: 'Wireless Environment Solution',
+    title: 'Wireless Infrastructure',
     description:
-      'Convert your tangling cable networking with our seamless wireless environment solutions.',
+      'Replace messy cable runs with enterprise-grade wireless coverage. Seamless roaming across your entire premises.',
   },
   {
     icon: ServerCog,
-    title: 'Server And IP Migration Services',
+    title: 'Server & IP Migration',
     description:
-      'Now, you can rest assured as we have a MIGRATION SERVICE for you which will resolve all your server migration doubts and issues.',
+      'Zero-downtime migration of your servers, IPs, and services. We handle DNS, firewall rules, and data integrity.',
   },
   {
-    icon: Network,
-    title: 'Network Infrastructure',
+    icon: Globe,
+    title: 'Network Optimization',
     description:
-      'Optimize your network structure to the highest performance with bandwidth optimizing and leverage the use of VLAN to prioritize your network speed accordingly.',
+      'VLAN segmentation, bandwidth shaping, and QoS policies to ensure critical traffic always gets priority.',
   },
   {
     icon: ShieldCheck,
-    title: 'Web Security Hardening',
+    title: 'Security Hardening',
     description:
-      'We can implement numerous security hardening measures on your web server to dramatically reduce the likelihood of a successful attack.',
+      'Web application firewalls, intrusion detection, SSL enforcement, and regular vulnerability assessments.',
   },
 ];
 
@@ -60,8 +61,8 @@ export function Services() {
       <div className="container-mx container-px">
         <SectionHeading
           eyebrow="Services"
-          title="What We Do"
-          subtitle="Comprehensive IT professional services designed to keep your business connected, secure, and running at peak performance."
+          title="Infrastructure that doesn't keep you up at night"
+          subtitle="From multi-WAN failover to security hardening, we handle the systems layer so you can focus on running your organization."
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
