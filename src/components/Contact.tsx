@@ -31,7 +31,7 @@ const contactItems = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@scanvx.com.my',
+    value: 'info@scanvx.my',
     actions: false,
   },
 ];
@@ -198,7 +198,7 @@ export function Contact() {
 
             {/* Quick email */}
             <a
-              href="mailto:info@scanvx.com.my?subject=IT Services Enquiry"
+              href="mailto:info@scanvx.my?subject=IT Services Enquiry"
               className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-brand-500/30 bg-brand-50 px-6 py-3.5 text-sm font-semibold text-brand-700 transition-all hover:border-brand-500 hover:bg-brand-100"
             >
               <Mail className="h-4 w-4" />
