@@ -94,7 +94,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3 text-sm text-ink-400">
                 <MapPin className="h-4 w-4 shrink-0 text-brand-400 mt-0.5" />
-                A/9, Taman Sayang, Jalan Putra 06250 Alor Setar, Kedah
+                14, Taman Sayang, 06250 Alor Setar, Kedah
               </li>
               <li className="flex items-center gap-3">
                 <svg className="h-4 w-4 shrink-0 text-brand-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
