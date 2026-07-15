@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useScrollSpy } from '../hooks/useScrollSpy';
 
 const navLinks = [
@@ -73,15 +73,8 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden items-center gap-3 lg:flex">
-            <a
-              href="tel:+60105448902"
-              className="flex items-center gap-1.5 text-sm font-medium text-ink-300 transition-colors hover:text-white"
-            >
-              <Phone className="h-4 w-4" />
-              +6010 544 8902
-            </a>
+          {/* Desktop CTA */}
+          <div className="hidden items-center lg:flex">
             <button
               onClick={() => scrollTo('contact')}
               className="rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand-600/30 transition-all duration-300 hover:shadow-brand-600/50 hover:brightness-110"
