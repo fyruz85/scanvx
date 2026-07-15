@@ -24,20 +24,19 @@ export function Hero() {
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-ink-200 backdrop-blur-sm animate-fade-in">
             <Sparkles className="h-4 w-4 text-accent-400" />
-            <span>IT Infrastructure · Networking · Security</span>
+            <span>Trusted by MPOB, KPKT & Hibiscus Petroleum</span>
           </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl font-bold leading-[1.1] text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl">
-            Your network should{' '}
-            <span className="gradient-text">just work.</span>
+            Deploy. Secure.{' '}
+            <span className="gradient-text">Recover.</span>
           </h1>
 
           {/* Subtext */}
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-300 sm:text-xl">
-            We build, secure, and maintain IT infrastructure for businesses
-            and institutions across Northern Malaysia. No fluff — just
-            systems that stay up.
+            Your infrastructure. Our responsibility. End-to-end IT systems
+            for businesses that can&apos;t afford downtime.
           </p>
 
           {/* CTAs */}
@@ -62,7 +61,7 @@ export function Hero() {
           <div className="mt-16 flex flex-wrap gap-8 sm:gap-12">
             {[
               { value: '10+', label: 'Years Experience' },
-              { value: '6', label: 'Core Services' },
+              { value: '14+', label: 'Major Projects' },
               { value: '24/7', label: 'Monitoring' },
             ].map((stat) => (
               <div key={stat.label}>
