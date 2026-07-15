@@ -37,21 +37,14 @@ export function Header() {
     >
       <div className="container-mx container-px">
         <div className="flex h-16 items-center justify-between lg:h-20">
-          {/* Logo */}
+          {/* Text Logo */}
           <button
             onClick={() => scrollTo('home')}
-            className="flex items-center"
-            aria-label="ScanVX Solutions home"
+            className="flex items-center gap-0.5 font-display text-2xl font-bold tracking-tight text-white"
+            aria-label="ScanVX Solution home"
           >
-            <img
-              src="/images/logo.png"
-              alt="ScanVX Solutions"
-              className="h-10 w-auto lg:h-12"
-              style={{
-                filter:
-                  'drop-shadow(0 0 8px rgba(59,180,255,0.55)) drop-shadow(0 0 20px rgba(59,130,246,0.35)) drop-shadow(0 0 1px rgba(255,255,255,0.6)) brightness(1.1)',
-              }}
-            />
+            Scan
+            <span className="gradient-text">VX</span>
           </button>
 
           {/* Desktop nav */}
@@ -80,7 +73,7 @@ export function Header() {
               onClick={() => scrollTo('contact')}
               className="rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand-600/30 transition-all duration-300 hover:shadow-brand-600/50 hover:brightness-110"
             >
-              Get A Free Quote
+              Get Started
             </button>
           </div>
 
@@ -114,7 +107,7 @@ export function Header() {
               onClick={() => scrollTo('contact')}
               className="mt-2 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 px-5 py-3 text-sm font-semibold text-white"
             >
-              Get A Free Quote
+              Get Started
             </button>
           </nav>
         )}
