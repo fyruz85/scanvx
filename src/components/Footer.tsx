@@ -50,15 +50,9 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <img
-              src="/images/logo.png"
-              alt="ScanVX Solution"
-              className="h-10 w-auto"
-              style={{
-                filter:
-                  'drop-shadow(0 0 8px rgba(59,180,255,0.55)) drop-shadow(0 0 20px rgba(59,130,246,0.35)) drop-shadow(0 0 1px rgba(255,255,255,0.6)) brightness(1.1)',
-              }}
-            />
+            <div className="font-display text-2xl font-bold tracking-tight text-white">
+              Scan<span className="gradient-text">VX</span>
+            </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">
               We build, secure, and maintain IT infrastructure for businesses
               and institutions across Northern Malaysia.
