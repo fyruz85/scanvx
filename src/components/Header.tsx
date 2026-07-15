@@ -49,7 +49,7 @@ export function Header() {
               className="h-10 w-auto lg:h-12"
               style={{
                 filter:
-                  'drop-shadow(0 0 8px rgba(59,180,255,0.55)) drop-shadow(0 0 20px rgba(59,130,246,0.35)) drop-shadow(0 0 1px rgba(255,255,255,0.6)) brightness(1.1)',
+                  'brightness(1.8) contrast(0.9) drop-shadow(0 0 8px rgba(59,180,255,0.4))',
               }}
             />
           </button>
