@@ -5,6 +5,10 @@ import {
   ServerCog,
   ShieldCheck,
   Globe,
+  Scan,
+  Container,
+  Flame,
+  MailCheck,
   type LucideIcon,
 } from 'lucide-react';
 import { SectionHeading } from './SectionHeading';
@@ -19,9 +23,9 @@ interface Service {
 const services: Service[] = [
   {
     icon: Network,
-    title: 'MultiWAN Solutions',
+    title: 'MultiWAN & Internet Bonding',
     description:
-      'Combine multiple ISP lines into a single high-speed, redundant connection. No more downtime when one line drops.',
+      'Combine multiple ISP lines into a single high-speed, redundant connection with custom firewall rules. No more downtime when one line drops.',
   },
   {
     icon: Monitor,
@@ -43,15 +47,39 @@ const services: Service[] = [
   },
   {
     icon: Globe,
-    title: 'Network Optimization',
+    title: 'Network Infrastructure',
     description:
-      'VLAN segmentation, bandwidth shaping, and QoS policies to ensure critical traffic always gets priority.',
+      'VLAN segmentation, bandwidth shaping, QoS policies, and IPv6 network solutions to future-proof your infrastructure.',
   },
   {
     icon: ShieldCheck,
     title: 'Security Hardening',
     description:
-      'Web application firewalls, intrusion detection, SSL enforcement, and regular vulnerability assessments.',
+      'Web application firewalls, SSL enforcement, vulnerability assessments, and regular security audits to keep threats out.',
+  },
+  {
+    icon: Scan,
+    title: 'Network IDS/IPS',
+    description:
+      'Intrusion detection and prevention systems that monitor your network traffic in real-time and block threats before they reach your systems.',
+  },
+  {
+    icon: Container,
+    title: 'Virtualization & Disaster Recovery',
+    description:
+      'Proxmox, VMware, and containerized infrastructure with tested disaster recovery plans. Your systems come back fast when it matters.',
+  },
+  {
+    icon: MailCheck,
+    title: 'Web & Mail Server Solutions',
+    description:
+      'Custom web hosting and mail server deployments you fully own and control. No third-party dependency, no per-seat pricing.',
+  },
+  {
+    icon: Flame,
+    title: 'Custom Firewall Solutions',
+    description:
+      'Purpose-built firewall configurations — pfSense, OPNsense, or iptables — tailored to your network topology and security requirements.',
   },
 ];
 
@@ -62,7 +90,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Services"
           title="Infrastructure that doesn't keep you up at night"
-          subtitle="From multi-WAN failover to security hardening, we handle the systems layer so you can focus on running your organization."
+          subtitle="From multi-WAN failover to disaster recovery, we handle the systems layer so you can focus on running your organization."
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
